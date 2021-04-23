@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2 - Website Building</title>
+    <style>
+        body {
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        #login-container {
+            width: 460px;
+            margin: 0 auto;
+        }
+
+        form label,
+        form input {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .username-wrong {
+            border-color: red;
+        }
+
+        .username-correct {
+            border-color: green;
+        }
+
+        .iconWrong {
+            display: none;
+            color: red;
+            margin-left: 27rem;
+        }
+
+        .iconWrong2 {
+            display: none;
+            color: red;
+            margin-left: 27rem;
+        }
+
+        .iconRight {
+            display: none;
+            color: green;
+            margin-left: 27rem;
+        }
+
+        .iconRight2 {
+            display: none;
+            color: green;
+            margin-left: 27rem;
+        }
+
+        form input {
+            padding: 8px;
+        }
+
+
+        form label {
+            font-weight: bold;
+        }
+
+        form div {
+            margin: 16px 0px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="login-container">
+
+        <form id="submitform">
+            <div class="error">
+                <label class="wrong" for="username">Username:</label>
+                <input class="right wrong" id="username" type="text"><i class="fas fa-check1 fa-check iconRight"></i><i
+                    class="fas fa-times1 fa-times iconWrong"></i>
+            </div>
+
+            <div>
+                <label class="wrong" for="password">Password:</label>
+                <input class="wrong" id="password" type="password"><i class="fas fa-check2 fa-check iconRight2"></i><i
+                    class="fas fa-times2 fa-times iconWrong2"></i>
+            </div>
+
+            <input type="submit" value="Login">
+        </form>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
